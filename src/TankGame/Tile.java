@@ -12,15 +12,15 @@ import java.util.ArrayList;
 
 public class Tile {
 
-
-    private BufferedImage unBreakAbleWall; // boundry
+    // Imgs
+    private BufferedImage unBreakAbleWall;
     private BufferedImage breakAbleWall;
     private BufferedImage tiles;
-
+    // Map class
     private int[][] map;
 
     private ArrayList<Rectangle> rectangle = new ArrayList<Rectangle>();
-    private ArrayList<Rectangle> rWall = new ArrayList<>(); // rectWall
+    private ArrayList<Rectangle> rWall = new ArrayList<>(); //
 
     public Tile(){
 
@@ -50,7 +50,7 @@ public class Tile {
 
     public ArrayList<Rectangle> getrWall(){
         return this.rWall;
-    } // getRectWall
+    } // =
 
 
     public int[][]getMap(){
@@ -59,12 +59,12 @@ public class Tile {
 
     public int getWallAmount(){
         return this.rWall.size();
-    } // getSize
+    } //
 
     public void setBreakAbleWall(int x, int y){
 
         this.map[x][y] = 0;
-    }  // breakWall
+    }  //
 
     public BufferedImage loadT(String location){
         BufferedImage img = null;
@@ -75,10 +75,10 @@ public class Tile {
 
         }
         return img;
-    } // loadTile
+    } //
 
     public void drawLayers(Graphics graphics){
-
+        // relative path
         tiles = loadT("resources/Background.bmp");
         unBreakAbleWall = loadT("resources/non-breakable.jpg");
         breakAbleWall = loadT("resources/breakable.jpg");
