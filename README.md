@@ -1,4 +1,3 @@
-# csc413-tankgame
+# Tank Game
 
-## Student Name  : Mohamed Farah
-## Student ID    : 918378258
+## 
